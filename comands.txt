@@ -1,0 +1,10 @@
+
+npm install --save-dev webpack@"^4.0.0"
+
+"@vue/cli-service": "^4.5.13"
+
+npm install --save-dev "@vue/cli-service@
+
+
+
+npm install --save-dev "@vue/cli-service@^3.0.0" --save-dev

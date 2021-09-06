@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="zero-zone">
+		<div class="zone-first style-zone">
+			<ul>
+				<li id="object-1" draggable="true">Биология</li>
+			</ul>
+		</div>
+
+		<div class="zone-second style-zone">
+			<ul>
+				<li id="object-2" draggable="true">Химия</li>
+			</ul>
+		</div>
+
+		<div class="zone-third style-zone">
+			<ul>
+				<li id="object-3" draggable="true">Физика</li>
+			</ul>
+		</div>
+
+	</div>
+
+	
+
+
+	<script>
+
+	const zoneFirst = document.querySelector('.zone-first');
+	const zoneSecond = document.querySelector('.zone-second');
+	const zoneThird = document.querySelector('.zone-third');
+	const object1 = document.querySelector('#object-1');
+	const object2 = document.querySelector('#object-2');
+	const object3 = document.querySelector('#object-3');
+
+	zoneFirst.ondragover = allowDrop;
+	zoneSecond.ondragover = allowDrop;
+	zoneThird.ondragover = allowDrop;
+
+	function allowDrop(event){
+		event.preventDefault();
+	}
+
+	object1.ondragstart = drag;
+	object2.ondragstart = drag;
+	object3.ondragstart = drag;
+
+	function drag(event){
+		event.dataTransfer.setData('id', event.target.id);
+	}
+
+	zoneFirst.ondrop = drop;
+	zoneSecond.ondrop = drop;
+	zoneThird.ondrop = drop;
+
+	function drop(event){
+		let itemId = event.dataTransfer.getData('id');
+		event.target.append(document.getElementById(itemId))
+	}
+
+
+
+	</script>
+
+
+
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		ul{
+			margin: 0;
+			padding: 10px;
+		}
+		li{
+			list-style: none;
+		}
+
+		.style-zone{
+			text-align: left;
+			width: 250px;
+			padding: 0px 0;
+			border: 1px solid black;
+		}
+
+	</style>
+
+</body>
+</html>

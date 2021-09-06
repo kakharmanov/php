@@ -1,0 +1,13 @@
+@media screen and (max-width: 321px){
+	.dropdown.is-mobile-modal > .dropdown-menu > .dropdown-content > .dropdown-item, .dropdown .dropdown-menu .has-link .dropdown.is-mobile-modal > .dropdown-menu > .dropdown-content > a, .dropdown.is-mobile-modal > .dropdown-menu > .dropdown-content > .has-link a {
+		padding: 0;
+	}
+
+	.datepicker .dropdown-content{
+		padding: 10px 5px;
+	}
+}
+
+body{
+	padding:15px;
+}
