@@ -1,0 +1,131 @@
+body{
+	padding: 15px;
+	color:#000000 !important;
+	background-color:#fcfcfc !important;
+}
+
+.about__text_decoration{
+	color:#000000 !important;
+}
+
+.background__career img{
+	min-width: 100%;
+}
+/* ============================================= */
+.border{
+	border: 1px solid #C7C0C0;
+	max-width: 1140px;
+	z-index: 10;
+	margin: 0 auto;
+}
+.padding__block{
+	padding: 0 100px;
+}
+
+.padding__vacancies_block{
+	padding: 0 25px;
+}
+/* ================ВАКАНСИИ================================= */
+.background_grid{
+	background-image: url('/CSS/img/background_grid.png');
+	padding: 25px;
+	z-index: 1;
+}
+
+.background_grid::before{
+	content: ' ';
+	/* background-color:#000000; */
+	background-image: url('/CSS/img/icon/screpka.png');
+	height: 130px;
+	width: 170px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 100;
+	left: 0;
+	right: 1100px;
+	background-size: cover;
+	background-position:center;
+}
+
+#more{
+	display: none;
+}
+
+#more1{
+	display: none;
+}
+
+#more2{
+	display: none;
+}
+
+/* .screpka img{
+	margin-left: -110px;
+} */
+
+/* ============================================================== */
+
+
+@media (min-width: 274px) and (max-width: 1024px) {
+	.padding__block{
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	.basic__header_config h2 {
+		color: #867F7F;
+		font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1277px) {
+	.background_grid::before{
+		display: none;
+	}
+
+}
+
+.container_in__working_proccess::after{
+	display: none;
+}
+
+
+
+
+/* =============header======================= */
+@media (min-width: 1024px) and (max-width: 1379px) {
+
+	.container_global_nav{
+		width: 660px;
+	}
+
+	.nav__list_position{
+		display: flex !important;
+		flex-wrap: wrap !important; 
+	}
+	.nav__item_position {
+		flex:none !important;
+		width: 45% !important;
+  	}
+
+	.nav__menu__margin {
+		margin-left: 0px !important;
+		padding-top: 70px;
+	}
+
+	.container_in__working_proccess::after{
+		height: 460px;
+		max-width: 210px;
+		margin: 0 auto;
+		position: absolute;
+		top: 1350px;
+		left: 0;
+		right: 0;
+	}
+	.nav_item_indiv_config{
+		flex: none !important;
+		width: 35% !important;
+	}
+	
+
+}

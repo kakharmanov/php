@@ -1,0 +1,142 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::After,
+*::before{
+	box-sizing: inherit;
+}
+
+.container_global{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'Palatino Linotype', sans-serif !important;
+
+	background-color: white !important; 
+}
+.section__instruments,.main__header{
+	color: #867F7F !important;
+}
+
+/* ================================================================= */
+.menu__list{
+	padding-top: 80px !important;
+}
+.menu__list_index{
+	display: flex;
+	padding-top: 68px !important;
+	padding-left: 100px;
+}
+
+.logo img{
+	padding-top: 10px;
+	width: 270px ;
+	height: 102px;
+}
+
+.size__icons img{
+	height: 105px !important;
+	width: 105px !important;
+	object-fit: contain !important;
+	background-size: contain !important;
+}
+
+.indent__menu_item{
+	padding-right: 112px !important;
+}
+
+.main__header h2, h3{
+	color: #867F7F;
+	font-size:40px;
+	/* line-height:44px; */
+}
+
+.list__link{
+	color: #867F7F;
+	font-size: 16px;
+	Line-height:17,6px;
+	font-weight: 700px;
+	border: 1px solid #C7C0C0;
+	border-radius:55px;
+	padding: 4px 40px;
+}
+
+.list__link:hover{
+	background-color: #28424F;
+	color:white;
+	transition: .5s;
+}
+/* ==============MAIN_HEADER=================== */
+.header__category_item a{
+	color: #867F7F;
+	text-decoration: underline;
+}
+
+.section_end_text h5{
+	color:#28424F !important;
+}
+
+.size-icon i{
+	width: 200px;
+	height: 0px;
+}
+
+.img_size{
+	height: 70px !important;
+	width: 150px !important;
+}
+
+.text-decoration{
+	font-family: 'Palatino Linotype', sans-serif;
+	font-size: 24px;
+	border: 1px solid #28424F;
+	border-radius: 100px;
+	padding: 10px 300px;
+}
+
+.icon-around-decoretion{
+	border: 1px solid #C7C0C0;
+	width: 800px;
+	border-radius: 100px;
+	margin: 0 auto;
+	padding: 15px 15px;
+}
+/* ============================================================ */
+
+/* .footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
+
+.footer__item_icon{
+	margin-right: 280px;
+}
+
+@media only screen and (max-width: 840px) {
+	.icon-around-decoretion{
+		border: 1px solid #867F7F;
+		max-width: 400px;
+		border-radius: 100px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.icon-around-decoretion{
+		border: 1px solid #867F7F;
+		max-width: 320px;
+		border-radius: 100px;
+		margin: 0 auto;
+
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.indent__menu_item{
+		padding-right: 0px !important;
+	}
+} 

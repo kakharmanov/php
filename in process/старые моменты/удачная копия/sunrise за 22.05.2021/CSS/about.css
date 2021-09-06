@@ -1,0 +1,64 @@
+body{
+	padding: 0px;
+}
+
+.header img{
+	min-width: 100%;
+}
+
+/* ========TEAM_BLOCK================== */
+
+.about__text_decoration{
+	color:#000000;
+}
+
+@media only screen and (max-width: 768px) {
+	body{
+		padding: 10px;
+	}
+
+	.nav__menu__margin_end {
+		margin-left: 30px !important;
+		padding-top: 0;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 769px) {
+	.nav__menu__margin_end {
+		margin-left: 150px !important;
+		padding-top: 0;
+  }
+  .nav__item_border-end {
+		padding: 5px 0px;
+		font-size: 16px;
+		color: #867F7F;
+	}
+}
+
+@media (min-width: 374px) and (max-width: 376px) {
+	.nav__menu__margin_end {
+		margin-left: 60px !important;
+		padding-top: 0;
+  }
+  .nav__item_border-end {
+		padding: 5px 0px;
+		font-size: 16px;
+		color: #867F7F;
+	}
+}
+
+@media (min-width: 413px) and (max-width: 415px) {
+	.nav__menu__margin_end {
+		margin-left: 60px !important;
+		padding-top: 0;
+  }
+  .nav__item_border-end {
+		padding: 5px 10px;
+		font-size: 16px;
+		color: #867F7F;
+	}
+}
+.container_in__working_proccess::after{
+	display: none;
+}

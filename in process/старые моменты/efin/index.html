@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">  
+  <title>TEST</title>
+</head>
+<body>
+  <!-- ===================================NAVBAR======================================== -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand ml-5">
+      <a href="/">
+        <img src="/images/efin-logo.svg" style="width: 50px; height: 70px;">
+      </a>
+
+      <a class="navbar-burger" id='burder'>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end text">
+        <a class="navbar-item">+7 (777) 943-11-11</a>
+        
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            E-FIN
+          </a>
+          <!-- <div class="navbar-dropdown">
+            <a class="navbar-item">ПРЕИМУЩЕСТВО</a>
+            <a class="navbar-item">ВИДЫ ОТЧЕТОВ</a>
+            <a class="navbar-item">КАК МЫ РАБОТАЕМ</a>
+            <a class="navbar-item">ТАРИФЫ</a>
+            <a class="navbar-item">О НАС</a>
+          </div> -->
+        </div> 
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="/efin bussines/index.html"class="navbar-link">
+            БИЗНЕС-ЮРИСТ
+          </a>
+          <!-- <div class="navbar-dropdown">
+            <a class="navbar-item mr-5 rata">ПРЕИМУЩЕСТВО</a>
+            <a class="navbar-item mr-5">КАК МЫ РАБОТАЕМ</a>
+            <a class="navbar-item mr-5">ТАРИФЫ</a>
+            <a class="navbar-item mr-5">О НАС</a>
+          </div> -->
+        </div> 
+        <a class="navbar-item mr-5">ВХОД/РЕГИСТРАЦИЯ</a>
+      </div>
+    </div> 
+  </nav> 
+
+<!-- =============================MAIN_BLOCK========================================= -->
+  
+      <div class="hero-body bg">
+        <div class="has-text-centered style-of title-params is-full-mobile">
+          <h1 class="title">
+            E-FIN - УПРАВЛЕНЧЕСКИЙ УЧЕТ И<br> ФИНАНСОВЫЙ АНАЛИЗ ДЛЯ <br>БИЗНЕСА
+          </h1>
+          <h2 class="subtitle has-text-light">
+            управление финансами, которое помогает<br> снизить расходы и увеличить прибыль
+          </h2>
+          <form action="page/new.html" target="_blank">
+            <button class="is-medium">РЕГИСТРАЦИЯ</button>
+           </form>
+        </div>
+      </div>
+
+<!-- =========================ABOUT_TEXT==================================== -->
+      
+    <section class="section container is-max-widescreen">
+       <!-- <div class="hero-body"> 
+        <div class="container has-text-centered media-of">
+          <p class="title">
+            ИЗ ЛЮБОЙ ТОЧКИ КАЗАХСТАНА ДОВЕРЯЙ СВОЙ БИЗНЕС ПРОФЕССИОНАЛАМ!
+          </p>
+          <p class="subtitle has-text-weight-semibold mt-6">
+            С E-FIN вы можете:
+          </p>
+        </div>
+      </div>
+
+       <div class="columns is-multiline mb-6">
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64"></i>
+                  <i class="fas fa-arrow-up icon-class mr-6"></i>
+              </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                <p class="mx-3 style-of-p"><strong>Увеличить прибыль,<br>сократить убытки</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-exclamation-circle icon-class mr-6"></i>
+              </figure></div><div class="media-content">
+                <div class="content">
+                <p class="mx-3 style-of-p" ><strong>Предотвратить кассовые разрывы</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-sort-amount-down-alt icon-class mr-6"></i>
+              </figure></div><div class="media-content">
+                <div class="content">
+                <p class="mx-3 style-of-p" ><strong>Снизить долю неликвидов</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div> -->
+    
+<!-- ====================   DONE -->
+      <!-- <div class="columns is-multiline parent-of-icon-hov">
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-donate icon-class mr-6"></i>
+              </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                <p class="mx-3 style-of-p"><strong>Контролировать денежные потоки</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+       <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-file-signature icon-class mr-6"></i>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p class="mx-3 style-of-p"><strong>Наладить финансовую дисциплину в Компании</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-chart-area icon-class mr-6"></i> 
+              </figure></div><div   class="media-content">
+                <div class="content">
+                <p class="mx-3 style-of-p"><strong>Достичь финансовой стабильности</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>   -->
+<!-- ==========================SECOND-ABOUT-TEXT======================================  -->
+<!-- 
+  <div class="container has-text-centered">
+        <p class="title py-3 mt-6">
+          Как не остаться без денег?
+        </p>
+      </div>
+            
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+
+      <div class="container has-text-centered mb-6 mt-5">
+        <p class="subtitle has-text-weight-semibold is-size-4">
+          Вы можете столкнуться с проблемой <span class="span-text">КАССОВОГО РАЗРЫВА</span> 
+        </p>
+      </div>
+
+      <div class="columns if-block">
+        <div class="column">
+          <div class="rows">
+            <div class="row has-text-left padding"> <h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Если у вас</h2> </div>
+            <div class="row has-text-left margin"><p>Отсутствует или плохо организовано финансовое планирование</p></div>
+            <div class="row has-text-left margin"><p>Кто-то бесконтрольно пользуется вашими деньгами</p></div>
+            <div class="row has-text-left margin"><p>Ваши деньги лежат в виде неликвида на складе и не работают</p></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rows">
+            <div class="row has-text-left padding"> <h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Мы предлагаем легкое решение</h2></div>
+            <div class="row has-text-left margin"><p>Внедрение платежного календаря и системы согласования платежей обе спечит текущее планирование поступлений и оплат</p></div>
+            <div class="row has-text-left margin"> <p>Анализ и контроль подотчета и задолженности (в том числе кредитного портфеля) позволит своевременно возвращать в оборот денежные средства</p></div>
+            <div class="row has-text-left margin"> <p>Анализ товарооборота позволит контролировать неликвиды и оборачиваемость склада</p></div>
+          </div>
+        </div>
+      </div>
+ <hr> -->
+
+ <!-- ===========================THIRT-ABOUT-TEXT================================= -->
+      
+    <!-- <div class="container has-text-centered">
+      <p class="title py-3 mt-6">
+        Как увеличить обороты и обеспечить рост прибыли?
+      </p>
+    </div>
+      
+    <div class="divider">
+      <i class="fas fa-circle color-ball"></i>
+    </div>
+
+    <div class="container has-text-centered mb-6 mt-5">
+      <p class="subtitle has-text-weight-semibold is-size-4">
+        Вы можете нести <span class="span-text">ФИНАНСОВЫЕ ПОТЕРИ</span> 
+      </p>
+    </div>
+
+    <div class="columns if-block">
+      <div class="column icon-hov">
+        <div class="rows">
+          <div class="row has-text-left padding"><h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Если у вас</h2> </div>
+          <div class="row has-text-left margin"><p>Нет правильного ценообразования</p></div>
+          <div class="row has-text-left margin"><p>Отсутствует системная скидочная политика</p></div>
+          <div class="row has-text-left margin"><p>Нет финансового контроля операционных расходов</p></div>
+        </div>
+      </div>
+      <div class="column icon-hov">
+        <div class="rows">
+          <div class="row has-text-left padding"> <h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Мы предлагаем легкое решение</h2></div>
+          <div class="row has-text-left margin"><p>Калькулятор ценообразования в личном кабинете позволит вам самостоятельно рассчитывать нормативные цены</p></div>
+          <div class="row has-text-left margin"><p>Внедрение стандартов управленческого учета поможет наладить корректный учет скидок и ввести системный подход к скидочной политике</p></div>
+          <div class="row has-text-left margin"><p>Анализ доходов и расходов, а также План/Фактный анализ позволят наладить контроль над операционными расходами</p></div>
+        </div>
+      </div>
+    </div>
+    <hr> -->
+<!-- ============================FOURTH-ABOUT-TEXT================================================ --> 
+    
+    <!-- <div class="container has-text-centered">
+        <p class="title py-3">
+          Как контролировать налоговую нагрузку?
+        </p>
+      </div>
+     
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+       
+      <div class="container has-text-centered mb-6 mt-5">
+        <p class="subtitle has-text-weight-semibold is-size-4">
+          Вам может не хватить времени <span class="span-text" >ПОДГОТОВИТЬ СРЕДСТВА</span>  для оплаты годовых налогов
+        </p>
+      </div>
+     
+      <div class="columns if-block">
+        <div class="column">
+          <div class="rows">
+            <div class="row has-text-left padding"> <h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Если у вас</h2> </div>
+            <div class="row has-text-left margin"><p>Бухгалтер не проводит всю первичную документацию своевременно</p></div>
+            <div class="row has-text-left margin"><p>Или не корректно проводит закрытие периода</p></div>
+            <div class="row has-text-left margin"><p>Не осуществляется прогноз КПН к оплате</p></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rows">
+            <div class="row has-text-left padding"> <h2 class="subtitle has-text-weight-semibold mb-3 is-size-4">Мы предлагаем легкое решение</h2></div>
+            <div class="row has-text-left margin"><p>Контроль со стороны финансиста поможет наладить своевременное проведение первичной документации</p></div>
+            <div class="row has-text-left margin"><p>А также поможет наладить корректное закрытие периода</p></div>
+            <div class="row has-text-left margin"><p>Ежемесячный прогноз КПН к оплате поможет заранее подготовиться и во время предпринять необходимые меры</p></div>
+          </div>
+        </div>
+      </div>
+
+<hr>   -->
+
+<!-- ===========================FIFTH-ABOUT-TEXT====================================== -->
+               
+    <!-- <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Ежемесячно мы будем готовить для руководителя бизнеса ключевые отчеты
+        </p>
+      </div>
+    </div>
+
+    <div class="divider">
+      <i class="fas fa-circle color-ball"></i>
+    </div>
+
+    <div class="columns is-multiline mb-6 mt-6">
+      <div class="column icon-hov">
+        <article class="media">
+          <div class="media-left ">
+              <i class="fas fa-file-invoice-dollar icon-class"></i>
+          </div>
+          <div class="media-content">
+              <div class="content">
+              <p  style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Отчет о движении денег</strong><br>Покажет, как используются ресурсы<br> Компании</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="column icon-hov">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <i class="fas fa-chart-bar icon-class mr-6"></i>
+            </figure></div><div class="media-content">
+              <div class="content">
+              <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Отчет о доходах и расходах</strong><br>Покажет на сколько эффективно развивается бизнес и какую приносит прибыль</p>
+            </div>
+          </div>
+        </article>
+      </div>
+  
+      <div class="column icon-hov">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <i class="fas fa-balance-scale icon-class mr-6"></i>
+            </figure></div><div class="media-content">
+              <div class="content">
+              <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Баланс</strong><br>Поможет оценить стоимость бизнеса</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div> -->
+
+<!-- ====================   DONE -->
+    <!-- <div class="columns is-multiline">
+      <div class="column icon-hov">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <i class="fas fa-chart-pie icon-class mr-6"></i>
+            </figure>
+          </div>
+          <div class="media-content">
+              <div class="content">
+              <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Пояснительная записка</strong><br>Покажет финансовый анализ деятельности.
+                В цифрах и графиках продемонстрирует, где возникают проблемы бизнеса. На что стоит обратить внимание при принятии управленческих решений</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="column icon-hov">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <i class="fas fa-comments-dollar icon-class mr-6"></i>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Финансовая консультация</strong><br>Даст возможность ежемесячно получать письменную рекомендацию нашего Эксперта</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+        <div class="column icon-hov">
+          
+        </div>
+    </div>   -->
+
+<!-- ===================================SIXTH-ABOUT-TEXT======================================================= -->
+
+      <!-- <div class="hero-body">
+        <div class="container has-text-centered media-of">
+          <p class="title ">
+            Дополнительные преимущества
+          </p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+
+      <div class="columns is-multiline mb-6 mt-5">
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left ">
+                <i class="fas fa-layer-group icon-class"></i>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                <p style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Консолидация отчетности юридических лиц и ИП</strong><br>Финансовый анализ деятельности не только в разрезе юридических лиц, но и анализ всего бизнеса в целом<br> Компании</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="icon-users-cog i-alt "></i>
+                <i class="fas fa-user-cog icon-class mr-6"></i>
+              </figure></div><div class="media-content">
+                <div class="content">
+                <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Разграничение прав доступа к системе</strong><br>Ограничение прав доступа к информации в соответствии с вашей политикой конфиденциальности</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column icon-hov">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <i class="fas fa-business-time icon-class mr-6"></i>
+              </figure></div><div class="media-content">
+                <div class="content">
+                <p class="mx-3" style="font-family: 'Souce Sans Pro',sans-serif; font-size: 15px;color:#444444"><strong>Финансовая дисциплина</strong><br>Внедрение системы контроля платежей и текущего планирования, а также ежемесячная проверка закрытия бухгалтерских документов</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div> -->
+ <!-- =====================================ELECTRON_FIN===========================================  -->
+      <!-- <div class="hero-body">
+        <div class="container has-text-centered media-of">
+          <p class="title">
+            Как работает электронный финансист?
+          </p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+
+      <div class="container has-text-centered mt-5">
+        <strong class="border-box">НАЧАЛО РАБОТЫ</strong> 
+      </div> -->
+<!-- ============================================== -->
+      <!-- <div class="container-timeline">
+        <div class="timeline">
+          <ul>
+          <li>
+            <div class="timeline-content odd">
+              <h2>1</h2>
+              <p>Регистрация на сайте. Заключение электронного договора-оферты и соглашения о конфиденциальности, выбор тарифа. Загрузка текущей базы 1С и дополнительных файлов Excel вашей организации в личном кабинете</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content even">
+              <h2>2</h2>
+              <p>Разработка стандартов управленческого учета, форм отчетности и регламента взаимодействия</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content odd">
+              <h2>3</h2>
+              <p>Обмен данными в согласованные в регламенте сроки</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content even">
+              <h2>4</h2>
+              <p>Составление письма-рекомендации о проведении необходимых корректировок</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content odd">
+              <h2>5</h2>
+              <p>Формирование отчетности на основе результатов анализа полученных данных. Публикация отчетности в личном кабинете и отправка ее на почту</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content even">
+              <h2>6</h2>
+              <p>Оказание ежемесячной письменной консультации в установленные в регламенте сроки</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content odd">
+              <h2>7</h2>
+              <p>Автоматическое удаление системой базы 1С и дополнительных файлов Excel</p>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </div> -->
+
+
+<!-- ============================================================ -->
+<!-- 
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Безопасность
+          </p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+
+      <div class="rows has-text-centered mt-5">
+        <div class="row mb-3"> 
+          <p>
+            Все данные между клиентом и сервисом e-fin.org передаются по зашифрованному соединению с 
+            использованием 256-битного SSL сертификата класса B+. Пароли и другие чувствительные данные хранятся в 
+            зашифрованном виде без возможности доступа к ним сотрудниками сервиса.
+          </p>
+        </div>
+
+        <div class="row mb-3">
+          <p>
+            Сервера e-fin.org располагаются в дата-центрах премиум-класса соответствующих классу надежности Tier-4, 
+            что гарантирует 99.995% времени доступности. Географически сервера располагаются в Германии и Нидерландах. 
+            Физический доступ к серверам строго ограничен и обеспечен биометрической защитой
+          </p>
+        </div>
+        <div class="row mb-3">
+          <p>
+            Для повышения отказоустойчивости сервиса и сохранности, все базы данных реплицируются в режиме реального времени
+             между несколькими серверами и резервируются на постоянной основе в высоконадежное кластерное хранилище.
+          </p>
+        </div>
+      </div> -->
+
+<!-- ========================================================================================================================= -->
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Тарифы
+          </p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <i class="fas fa-circle color-ball"></i>
+      </div>
+
+
+      <div class="container has-text-left mt-5">
+        <p style="font-weight:bold"> Скидки при оплате<br> • 12 месяцев -15% • 9 месяцев -10% • 6 месяцев -5%</p>
+        <p style="font-size: 15px;"> Один клиент может включать в себя до 5 юридических лиц и ИП, работающих в одном направлении бизнеса</p> 
+      </div>
+
+      <div class="columns mt-3 has-text-centered">
+<!-- ====== -->
+        <div class="column is-full-mobile style-of-table">
+          <div class="table-header">
+            <h4 class="has-text-weight-semibold">SMART MINI</h4>
+          </div>
+          <div class="table">
+            <p>Годовой оборот
+              до 72 млн. тенге</p>
+            <p>Управленческая отчетность</p>
+            <p>Финансовый анализ</p>
+            <p>Пояснительная записка</p>
+            <p>1 письменная консультация Эксперта</p>
+            <p style="padding-top:20px; font-weight: 500;">50 000 тг/месяц</p>
+          </div>
+        </div> 
+     
+        <div class="column is-full-mobile style-of-table">
+          <div class="table-header">
+            <h4 class="has-text-weight-semibold">SMART</h4>
+          </div>
+          <div class="table">
+            <p>Годовой оборот
+              от 72 до 154 млн. тенге</p>
+            <p>Управленческая отчетность</p>
+            <p>Финансовый анализ</p>
+            <p>Пояснительная записка</p>
+            <p>1 письменная консультация Эксперта</p>
+            <p style="padding-top:20px; font-weight: 500;">80 000 тг/месяц</p>
+          </div>
+        </div>
+
+          <div class="column is-full-mobile style-of-table">
+            <div class="table-header">
+              <h4 class="has-text-weight-semibold">SMART MAX</h4>
+            </div>
+            <div class="table">
+              <p>Годовой оборот
+                от 154 до 525 млн. тенге</p>
+              <p>Управленческая отчетность</p>
+              <p>Финансовый анализ</p>
+              <p>Пояснительная записка</p>
+              <p>1 письменная консультация Эксперта</p>
+              <p style="padding-top:20px; font-weight: 500;">100 000 тг/месяц</p>
+            </div>
+          </div>
+          <div class="column is-full-mobile style-of-table">
+            <div class="table-header">
+              <h4 class="has-text-weight-semibold">SMART+</h4>
+            </div>
+            <div class="table">
+              <p>Годовой оборот
+                от 525 млн. тенге</p>
+              <p>Управленческая отчетность</p>
+              <p>Финансовый анализ</p>
+              <p>Пояснительная записка</p>
+              <p>1 письменная консультация Эксперта</p>
+              <p style="padding-top:20px; font-weight: 500;">150 000 тг/месяц</p>
+            </div>
+          </div>
+          <div class="column is-full-mobile style-of-table">
+            <div class="table-header">
+              <h4 class="has-text-weight-semibold">SMART SPECIAL</h4>
+            </div>
+            <div class=" table">
+              <p>Свыше 5 юридических лиц и ИП</p>
+              <p>Управленческая отчетность</p>
+              <p>Финансовый анализ</p>
+              <p>Пояснительная записка</p>
+              <p >1 письменная консультация Эксперта</p>
+              <p style="padding-top:20px; font-weight: 500;"><span>индивидуальный</span></p>
+            </div>
+          </div>
+        </div> 
+        
+<!-- ==================================================================================================================================== -->
+
+          <!-- <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title">
+                О нас
+              </p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <i class="fas fa-circle color-ball"></i>
+          </div>
+         
+          <div class="hero-body mt-5" style="border: 1px solid grey;">
+            <div class="container has-text-left">
+              <img src="./images/photoHum.jpg" alt="">
+              <p  class="mb-3" style="font-style: italic;"> Я уже больше 20 лет в финансах. Все эти годы помогала собственникам управлять бизнесом, основываясь на показателях, а не на интуиции и прошлом опыте. На моей практике большинство компаний не имеет финансового директора.
+                Спросите: Зачем компании финансовый директор? Чтобы получить ответ, что нужно делать, а что перестать. Ведь за этим стоит успех и рост компании!
+                На личных кейсах мы разработали проект e-fin.kz.
+                Персональный электронный финансист теперь доступен малому и среднему бизнесу по выгодной цене. Мы рушим стереотипы о том, что финансист – это дорого! 
+              </p>
+              <p class="has-text-left" style="font-weight: bold;">- АСЕЛЬ ДЖАМАЛОВА</p>
+              <p class="has-text-left"  style="color: grey; font-size:14px;">директор</p>
+            </div>
+          </div> -->
+
+<!-- ========================================================================================================================================== -->
+
+          <!-- <div class="hero-body">
+            <div class="container has-text-centered media-of">
+              <p class="title">
+                Демонстрация работы системы
+              </p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <i class="fas fa-circle color-ball"></i>
+          </div>
+
+          <div class="columns has-text-centered mt-5">
+           <div class="column">
+            <iframe width="360" height="202" src="https://www.youtube.com/embed/yFKl-oaDfVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="column">
+            <iframe width="360" height="202" src="https://www.youtube.com/embed/_uOUHXpFKk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="column">
+            <iframe width="360" height="202" src="https://www.youtube.com/embed/wm54s1Sz4i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+          </div> -->
+    </section> 
+   
+<!-- =================================================FOOTER-PAGE========================================================================= -->
+
+   <!-- <footer class="footer has-background-dark">
+    <div class="container is-max-widescreen">
+      <div class="columns pt-5 mt-5">
+      
+      <div class="column is-4 has has-text-white has-text-centered pt-5 mt-5">
+        <h2>КОНТАКТЫ</h2>
+        <p>г. Алматы<br>Бульвар Бухар Жырау, 62Б, офис 14</p>
+        <a class="qwerty" href="">8 777 943 1111<br></a>
+        <a class="qwerty" href=""> 8 778 944 1111</a>
+        <p>ПН-ПТ: 10-00 - 19-00<br>
+          СБ, ВС: выходной</p>
+        <div class="column has-text-centered">
+          <i class="fab fa-facebook-f pr-3"></i><i class="fab fa-instagram pr-3"></i><i class="fab fa-youtube pr-3"></i>
+        </div>
+        <form action="page/new.html" target="_blank">
+          <button class="is-medium">РЕГИСТРАЦИЯ</button>
+         </form>
+        
+      </div>
+
+      <div class="column is-7 has-text-centered map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.205951619957!2d76.90726790921887!3d43.230416784158685!2m3!1
+        f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692862599e39%3A0x8890a038aec6e06f!2zMTQsINCx0YPQuy4g0JHRg9GF0LDRgC3QltC40YDQsNG
+        DIDYyLCDQkNC70LzQsNGC0YsgMDUwMDAw!5e0!3m2!1sru!2skz!4v1619170004723!5m2!1sru!2skz" 
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+     </div>
+   </div>
+  </footer> -->
+
+  <!-- ======================================================================================================================================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="/script.js"></script>
+</body>
+</html>

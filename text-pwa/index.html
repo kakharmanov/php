@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme_color" content="rgba(182,0,27,0.97)">
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" href="./icons/chrome/chrome-installprocess-128-128.png">
+	<title>To do</title>
+</head>
+<body>
+	<div class="main__settings">
+		<header>
+			<nav class="navbar__list">
+				<a class="navbar__item" href="#">Главная</a>
+				<a class="navbar__item" href="#">О нас</a>
+				<a class="navbar__item" href="#">Контакты</a>
+			</nav>
+		</header>
+		<main>
+			<div class="box__content">
+				<div id="input">
+					<h2>Ввод задачи:</h2>
+					<input type="text" class="ipt" id="inputValue">
+					<button class="btn" onclick="newElement()">Запланировать</button>
+				</div>
+				<div id="output">
+					<h2>Список Задач:</h2>
+					<button class="removeAll" onclick="RemoveAll()">Очистить список</button>
+					<ul id="list">
+						<hr>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<small>Powered by Kakharmanov Shamil.</small>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

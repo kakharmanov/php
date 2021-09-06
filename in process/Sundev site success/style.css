@@ -1,0 +1,168 @@
+body{
+	margin: 0;
+	padding: 15px;
+	font-family: 'Palatino Linotype', sans-serif;	
+	background-color:#fcfcfc !important;
+	line-height: 1.6;
+	color:#867F7F;
+}
+
+a{
+	color:#867F7F !important;
+	text-decoration: none !important;
+}
+
+.nav-config{
+	justify-content: center;
+}
+
+.header{
+	padding-top:50px;
+}
+
+.line-around{
+	margin: 0 auto;
+	max-width: 700px;
+	border: 1px solid #C7C0C0;
+	border-radius: 100px;
+}
+.work_proccess{
+	margin: 0 auto;
+	max-width: 700px;
+}
+.text_decoration_a a{
+	text-decoration: underline !important;
+}
+
+.hover_effect:hover{
+	background-color: #28424F;
+	color:#FFFFFF;
+	transition: .5s;
+}
+
+.active{
+	background-color: #28424F;
+	color:#FFFFFF;
+}
+
+.hover-effect_icon{
+	transition: .5s;
+
+}
+
+.hover-effect_icon:hover{
+ transform:scale(1.4);
+}
+
+
+@media only screen and (min-width: 768.5px) {
+	.off{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.on{
+		display: none;
+	}
+	.responseve__column{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	body{
+		background-color: #fcfcfc !important;
+	}
+
+	.logo img{
+		max-width: 50%;
+	}
+
+	.line-around {
+		border-radius: 50px;
+  }
+
+  .background-pic img {
+		height: 15vh !important; 
+	}
+}
+
+/* =================ABOUT================ */
+
+.background-pic img{
+	height: 50vh;
+	width: 300vh;
+	background-size: cover;
+}
+
+@media screen and (min-width: 769px){
+	.column.is-2, .column.is-2-tablet {
+		flex: none;
+		width: 30%;
+	}
+}
+
+.icon_instagram a{
+	color: #000000 !important;;
+}
+
+
+
+
+/* ==========CAREER============== */
+#more{
+	display: none;
+}
+
+#more1{
+	display: none;
+}
+
+#more2{
+	display: none;
+}
+
+ .border{
+	border: 1px solid #C7C0C0;
+	max-width: 1140px;
+	z-index: 10;
+	margin: 0 auto;
+}
+
+.background_grid{
+	background-image: url('/img/grid.png');
+	padding: 25px;
+	z-index: 1;
+}
+
+.background_grid::before{
+	content: ' ';
+	background-image: url('/img/icon/screpka.png');
+	height: 130px;
+	width: 170px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 100;
+	left: 0;
+	right: 1100px;
+	background-size: cover;
+	background-position:center;
+} 
+
+@media only screen and (max-width: 1265px) {
+	.background_grid::before{
+		display: none;
+	}
+}
+
+/* .align_items_center{
+	display: flex;
+	align-items: center;
+} */
+
+/* ==========Blog============== */
+.blog_section{
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+}

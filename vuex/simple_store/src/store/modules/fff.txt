@@ -1,0 +1,19 @@
+// 	localStorage.setItem("user_" + product.id + "_data", {
+		// 		cart: {
+		// 			products: [
+		// 				{
+		// 					product_id: 123,
+		// 					count:123
+		// 				},
+		// 				{
+		// 					product_id: 123,
+		// 					count:123							
+		// 				},
+		// 			]
+		// 		}
+		// 	})
+		// },
+		// getCartItem({commit}){
+		// 	let user_data = localStorage.getItem("user_" + product.id + "_data")
+		// 	commit('SET_CART', user_data.cart)
+		// }

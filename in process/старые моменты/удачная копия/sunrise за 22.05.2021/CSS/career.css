@@ -1,0 +1,90 @@
+body{
+	padding: 0;
+	color:#000000 !important;
+	background-color:#fcfcfc !important;
+}
+
+.about__text_decoration{
+	color:#000000 !important;
+}
+
+.background__career img{
+	min-width: 100%;
+}
+/* ============================================= */
+.border{
+	border: 1px solid #C7C0C0;
+	max-width: 1140px;
+	z-index: 10;
+	margin: 0 auto;
+}
+.padding__block{
+	padding: 0 100px;
+}
+
+.padding__vacancies_block{
+	padding: 0 25px;
+}
+/* ================ВАКАНСИИ================================= */
+.background_grid{
+	background-image: url('/CSS/img/background_grid.png');
+	padding: 25px;
+	z-index: 1;
+}
+
+.background_grid::before{
+	content: ' ';
+	/* background-color:#000000; */
+	background-image: url('/CSS/img/icon/screpka.png');
+	height: 130px;
+	width: 170px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 100;
+	left: 0;
+	right: 1100px;
+	background-size: cover;
+	background-position:center;
+}
+
+#more{
+	display: none;
+}
+
+#more1{
+	display: none;
+}
+
+#more2{
+	display: none;
+}
+
+/* .screpka img{
+	margin-left: -110px;
+} */
+
+/* ============================================================== */
+
+
+@media (min-width: 274px) and (max-width: 1024px) {
+	.padding__block{
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	.basic__header_config h2 {
+		color: #867F7F;
+		font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1277px) {
+	.background_grid::before{
+		display: none;
+	}
+
+}
+
+.container_in__working_proccess::after{
+	display: none;
+}

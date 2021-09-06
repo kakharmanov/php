@@ -1,0 +1,10 @@
+body{
+	padding: 15px;
+}
+
+
+.container_in__working_proccess::after{
+	display: none !important;
+}
+
+

@@ -1,0 +1,16 @@
+body{
+	padding: 15px;
+}
+
+
+.container_in__working_proccess::after{
+	display: none !important;
+}
+
+@media only screen and (max-width: 768px){
+	img {
+		height: auto;
+		max-width: 100%;
+  }
+}
+
