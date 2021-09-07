@@ -1,0 +1,18 @@
+*{
+	box-sizing: border-box;
+}
+ul{
+	margin: 0;
+	padding: 10px;
+}
+li{
+	margin: 20px 0;
+	list-style: none;
+}
+
+.style-zone{
+	text-align: left;
+	width: 250px;
+	padding: 0px 0;
+	border: 1px solid black;
+}

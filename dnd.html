@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<title>Document</title>
+</head>
+<body>
+	
+
+<!-- ================================================= -->
+	#app
+  .row
+    .col-3
+      .mb-2
+      Tree(:data="tree1data" draggable cross-tree)
+          div(slot-scope="{data, store}")
+            template(v-if="!data.isDragPlaceHolder")
+              b(v-if="data.children && data.children.length" @click="store.toggleOpen(data)") {{data.open ? '-' : '+'}}&nbsp;
+              span {{data.text}}
+<!-- ================================================= -->
+#app {
+	padding: 50px;
+ }
+ 
+ .he-tree{
+	border: 1px solid #ccc;
+	padding: 20px;
+ }
+ .tree-node{
+ }
+ .tree-node-inner{
+	padding: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+ }
+ .draggable-placeholder{
+ }
+ .draggable-placeholder-inner{
+	border: 1px dashed #0088F8;
+	box-sizing: border-box;
+	background: rgba(0, 136, 249, 0.09);
+	color: #0088f9;
+	text-align: center;
+	padding: 0;
+	display: flex;
+	align-items: center;
+ }
+<!-- ================================================= -->
+
+th = treeHelper
+app = new Vue({
+  el: '#app',
+  components: {Tree: vueDraggableNestedTree.DraggableTree},
+  data: {
+    tree1data: [
+        {text: 'node 1'},
+        {text: 'node 2'},
+        {text: 'node 4'},
+        {text: 'node 5', children: [
+          {text: 'node 1'},
+          {text: 'node 3'},
+        ]},
+      ]
+  },
+  methods: {
+    // add child to tree2
+    addChild() {
+      this.tree2data[0].children.push({text: 'child'})
+    },
+    expandAll() {
+      th.breadthFirstSearch(this.tree1data, node => {
+        node.open = true
+      })
+    },
+    collapseAll() {
+      th.breadthFirstSearch(this.tree1data, node => {
+        node.open = false
+      })
+    },
+  },
+})
+
+
+</body>
+</html>
