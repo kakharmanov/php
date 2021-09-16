@@ -1,17 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueRouter from 'vue-router'
-import router from './router/index'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import {DraggableTree} from 'vue-draggable-nested-tree'
 
 
-Vue.use(VueRouter)
 Vue.use(Buefy)
+Vue.use(DraggableTree)
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-  router
 }).$mount('#app')

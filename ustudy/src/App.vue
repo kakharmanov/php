@@ -1,17 +1,16 @@
 <template>
-  <!-- <Login></Login> -->
-  <Dashboard></Dashboard>
+  <div id="app">
+   <router-view></router-view>
+  </div>
 </template>
 
 <script>
-
+import Admin from './pages/Layouts/Admin.vue'
 import Login from './pages/Login.vue'
-import Dashboard from './pages/MainDashboard.vue'
-
 export default {
   components:{
-    Login,
-    Dashboard
+    Admin,
+    Login
   },
   name: 'App'
 }
@@ -19,16 +18,23 @@ export default {
 </script>
 
 <style>
+  @import "reset.css";
   @import "~bulma/css/bulma.css";
-  
+  @import "style.css";
+
   *{
     box-sizing: border-box !important;
     padding: 0;
     margin: 0;
+    /* font-family: 'Noto'; */
   }
   p{
     padding: 0;
     margin: 0;
+  }
+  a{
+    text-decoration: none !important;
+    color:black !important;
   }
   html{
     background-color: white;
