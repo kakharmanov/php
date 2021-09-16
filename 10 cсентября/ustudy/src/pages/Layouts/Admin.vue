@@ -1,0 +1,69 @@
+<template>
+	<div>
+		<NavBarAfter></NavBarAfter>
+		<section class="main">
+			<div class="main-content is-flex">
+				<SideBarLeft></SideBarLeft>
+				<div :class="RightSideBarHidden ? 'is-hidden-width' : '' " class="main-center">	
+					<router-view></router-view>
+				</div>
+				<SideBarRight @rightBar-hidden="toggleBar()" @accordians-action="toggle()"></SideBarRight>
+			</div>
+		</section>
+	</div>
+</template>
+
+<script>
+import TableDashboard from '../../components/Admin/TableDashboard.vue'
+import TableUsers from '../../components/Admin/TableUser.vue'
+import SideBarLeft from '../../components/Admin/SideBarLeft.vue'
+import SideBarRight from '../../components/Admin/SideBarRight.vue'
+import NavBarAfter from '../../components/NavBarAfter.vue'
+
+export default {
+	components:{
+		SideBarLeft,
+		TableUsers,
+		SideBarRight,
+		NavBarAfter,
+		TableDashboard
+	},
+	data(){
+		return{
+			RightSideBarHidden:false
+		}
+	},
+	methods:{
+		toggleBar(){
+			this.RightSideBarHidden =! this.RightSideBarHidden;
+		},
+		toggle(emit){
+			this.RightSideBarHidden = emit
+		}
+	}
+}
+
+</script>
+
+<style>
+
+/* =====================SECTION-PARAMS======================================== */
+	.main{
+		margin-top: 4.813rem;
+	}
+	.main-content{
+		width: auto;
+	}
+	
+	.main-center{
+		margin-right: 260px;
+		padding-right:10px ;
+		width: 100%;
+	}
+
+	.is-hidden-width{
+		margin-right: 0;
+		width: 100%;
+	}
+
+</style>
